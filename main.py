@@ -5,7 +5,7 @@ from routes.params import router as params_router
 app = FastAPI() # ASGI APP
 
 # 라우터 등록
-# app.include_router(todo_router)
+app.include_router(todo_router)
 app.include_router(params_router)
 
 # 요청 처리를 위한 엔드포인트
